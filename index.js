@@ -1,10 +1,7 @@
-// import inquirer
 const inquirer = require('inquirer')
 const { writeFile } = require('fs/promises')
 const { createSvg } = require('./lib/shapes.js')
-// const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt')
-// inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
-// take user input
+
 inquirer
     .prompt([
         {
