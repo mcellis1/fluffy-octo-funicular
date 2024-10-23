@@ -29,6 +29,6 @@ inquirer
     ])
     .then(({ text, textColor, shape, bgColor }) => {
         writeFile(`${text}.svg`, createSvg({ text, textColor, shape, bgColor }), (err) =>
-            err ? console.logg(err) : console.log('successfully created svg file')
+            err ? console.log(err) : console.log('successfully created svg file')
         )
     })
